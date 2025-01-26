@@ -22,6 +22,7 @@ import { Button } from "../ui/button";
 import Link from "next/link";
 import Image from "next/image";
 import { ToggleTheme } from "./toogle-theme";
+import { UserButton } from "@clerk/nextjs";
 
 interface RouteProps {
   href: string;
@@ -176,6 +177,7 @@ export const Navbar = () => {
 
       <div className="hidden lg:flex">
         <ToggleTheme />
+        <UserButton />
       </div>
     </header>
   );
