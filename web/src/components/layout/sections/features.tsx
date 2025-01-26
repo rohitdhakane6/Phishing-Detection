@@ -13,43 +13,44 @@ const featureList: FeaturesProps[] = [
     icon: "TabletSmartphone",
     title: "Mobile Friendly",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. A odio velit cum aliquam, consectetur.",
+      "Optimized for all devices, ensuring a smooth experience whether you're on a phone, tablet, or desktop.",
   },
   {
     icon: "BadgeCheck",
     title: "Social Proof",
     description:
-      "Lorem ipsum dolor sit amet consectetur. Natus consectetur, odio ea accusamus aperiam.",
+      "Trusted by users worldwide, showcasing testimonials and success stories to build credibility.",
   },
   {
     icon: "Goal",
     title: "Targeted Content",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. odio ea accusamus aperiam.",
+      "Tailored content that speaks directly to your audience, ensuring relevant and engaging messaging.",
   },
   {
     icon: "PictureInPicture",
     title: "Strong Visuals",
     description:
-      "Lorem elit. A odio velit cum aliquam. Natus consectetur dolores, odio ea accusamus aperiam.",
+      "Captivating imagery and design elements that enhance user experience and drive engagement.",
   },
   {
     icon: "MousePointerClick",
     title: "Clear CTA",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing. odio ea accusamus consectetur.",
+      "Effective call-to-actions that guide users seamlessly towards taking the next step.",
   },
   {
     icon: "Newspaper",
     title: "Clear Headline",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. A odio velit cum aliquam. Natus consectetur.",
+      "Concise and compelling headlines that immediately convey the value of your offering.",
   },
 ];
 
+
 export const FeaturesSection = () => {
   return (
-    <section id="features" className="container py-24 sm:py-32">
+    <section id="features" className="container py-2 sm:py-32">
       <h2 className="text-lg text-primary text-center mb-2 tracking-wider">
         Features
       </h2>

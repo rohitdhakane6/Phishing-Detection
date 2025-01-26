@@ -12,8 +12,8 @@ import { TeamSection } from "@/components/layout/sections/team";
 import { TestimonialSection } from "@/components/layout/sections/testimonial";
 
 export const metadata = {
-  title: "Shadcn - Landing template",
-  description: "Free Shadcn landing page for developers",
+  title: "Check Phish - Check if a website is a phishing site",
+  description: "Check Phish is a free tool to check if a website is a phishing site",
   openGraph: {
     type: "website",
     url: "https://github.com/nobruf/shadcn-landing-page.git",
@@ -43,17 +43,17 @@ export default function Home() {
   return (
     <>
       <HeroSection />
-      <SponsorsSection />
+      {/* <SponsorsSection /> */}
       <BenefitsSection />
       <FeaturesSection />
-      <ServicesSection />
-      <TestimonialSection />
-      <TeamSection />
-      <CommunitySection />
-      <PricingSection />
+      {/* <ServicesSection /> */}
+      {/* <TestimonialSection /> */}
+      {/* <TeamSection /> */}
+      {/* <CommunitySection /> */}
+      {/* <PricingSection /> */}
       <ContactSection />
-      <FAQSection />
-      <FooterSection />
+      {/* <FAQSection /> */}
+      {/* <FooterSection /> */}
     </>
   );
 }
