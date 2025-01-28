@@ -58,7 +58,7 @@ export const ContactSection = () => {
   }
 
   return (
-    <section id="contact" className="container">
+    <section id="contact" className="container pb-7 md:pb-20">
       <section className="grid grid-cols-1 md:grid-cols-2 gap-8">
         <div>
           <div className="mb-4">

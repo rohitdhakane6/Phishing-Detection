@@ -7,8 +7,8 @@ import { Providers } from "@/app/Providers";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Shadcn - Landing template",
-  description: "Landing template from Shadcn",
+  title: "Check Phish | Landing",
+  description: "",
 };
 
 export default function RootLayout({
