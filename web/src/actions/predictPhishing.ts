@@ -39,7 +39,8 @@ export async function predictPhishing(
     // await new Promise(resolve => setTimeout(resolve, 2000));
 
     // Mock response object for demonstration
-    const response = { ok: true, json: async () => ({ isPhishing:Math.random() > 0.5 ? true : false, confidence:Math.random() }) };
+    const confidence = Math.random()
+    const response = { ok: true, json: async () => ({ isPhishing:confidence > 0.5 ? true : false, confidence:confidence}) };
 
     if (!response.ok) {
       throw new Error("Prediction failed")
