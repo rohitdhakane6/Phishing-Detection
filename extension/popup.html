@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Phishing Detector</title>
+    <style>
+      body {
+        font-family: sans-serif;
+        padding: 16px;
+        width: 250px;
+        background: #f9fafb;
+        color: #111;
+      }
+
+      h2 {
+        font-size: 18px;
+        margin-bottom: 12px;
+      }
+
+      input {
+        width: 100%;
+        padding: 8px;
+        font-size: 14px;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        margin-bottom: 8px;
+      }
+
+      button {
+        width: 100%;
+        padding: 10px;
+        font-size: 14px;
+        background-color: #2563eb;
+        color: white;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+      }
+
+      button:disabled {
+        background-color: #93c5fd;
+      }
+
+      .result {
+        margin-top: 12px;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        gap: 6px;
+      }
+
+      .error {
+        color: red;
+      }
+
+      .success {
+        color: green;
+      }
+
+      .icon {
+        font-size: 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Phishing Detector</h2>
+    <form id="urlForm">
+      <input type="url" id="urlInput" placeholder="https://example.com" required />
+      <button type="submit" id="scanBtn">Analyze URL</button>
+    </form>
+    <div id="result"></div>
+
+    <script src="popup.js"></script>
+  </body>
+</html>
