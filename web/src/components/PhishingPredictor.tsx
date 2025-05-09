@@ -112,7 +112,7 @@ export function PhishingPredictor() {
                 ) : (
                   <AlertCircle className="mr-2" />
                 )}
-                {prediction} (Confidence: {(confidence ?? 0).toFixed(2)}%)
+                {/* {prediction} (Confidence: {(confidence ?? 0).toFixed(2)}%) */}
               </div>
             )}
           </div>
