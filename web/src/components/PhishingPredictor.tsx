@@ -17,6 +17,7 @@ import { AlertCircle, CheckCircle } from "lucide-react";
 const urlSchema = z.string().url("Please enter a valid URL");
 
 export function PhishingPredictor() {
+  
   const [prediction, setPrediction] = useState<boolean | null>(null);
   const [confidence, setConfidence] = useState<number | null>(null);
   const [error, setError] = useState<string | null>(null);
@@ -37,7 +38,7 @@ export function PhishingPredictor() {
     try {
       urlSchema.parse(url);
 
-      const res = await fetch("http://127.0.0.1:5000/api/predict", {
+      const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/predict`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
