@@ -107,3 +107,4 @@ xgboost==3.0.0
 xxhash==3.4.1
 yellowbrick==1.5
 zipp==3.18.1
+gunicorn
