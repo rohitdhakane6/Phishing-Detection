@@ -21,7 +21,7 @@ form.addEventListener("submit", async (e) => {
   }
 
   try {
-    const res = await fetch("http://127.0.0.1:5000/api/predict", {
+    const res = await fetch("https://phishing-detection-production.up.railway.app/api/predict", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -36,8 +36,8 @@ form.addEventListener("submit", async (e) => {
 
     resultDiv.className = `result ${data.isPhishing ? "error" : "success"}`;
     resultDiv.innerHTML = data.isPhishing
-      ? `This URL is likely a phishing attempt.<br>Confidence: ${data.confidence.toFixed(2)}%`
-      : `This URL appears safe.<br>Confidence: ${data.confidence.toFixed(2)}%`;
+      ? `This URL is likely a phishing attempt`
+      : `This URL appears safe.<br>Confidence`;
   } catch (err) {
     resultDiv.textContent = "Failed to fetch prediction";
     resultDiv.className = "result error";

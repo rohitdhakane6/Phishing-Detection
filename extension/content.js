@@ -33,8 +33,7 @@
     messageElement.style.fontSize = "18px";
     messageElement.style.margin = "0";
     messageElement.style.color = "#333333";
-    messageElement.innerHTML = `${message}<br><span style="font-size: 14px; color: #999999;">Confidence: ${confidence.toFixed(2)}%</span>`;
-
+    messageElement.innerHTML = `${message}`;
     // Close button
     const closeButton = document.createElement("button");
     closeButton.innerText = "Close";
@@ -60,7 +59,7 @@
   };
 
   try {
-    const res = await fetch("http://127.0.0.1:5000/api/predict", {
+    const res = await fetch("https://phishing-detection-production.up.railway.app/api/predict", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ url: currentUrl }),
@@ -72,7 +71,7 @@
     const result = await res.json();
 
     if (result.isPhishing) {
-      createModal("⚠️ Phishing Detected!", result.confidence);
+      createModal("⚠️ Phishing Detected,Visit website on your risk !", result.confidence);
     }
   } catch (error) {
     console.error("Phishing check failed:", error);
