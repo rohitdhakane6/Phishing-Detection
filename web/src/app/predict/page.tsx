@@ -1,4 +1,4 @@
-import { PhishingPredictor } from "@/components/PhishingPredictor"
+import { PhishingPredictor } from "@/components/PhishingPredictor";
 
 export default function page() {
   return (
@@ -6,6 +6,5 @@ export default function page() {
       <h1 className="text-4xl font-bold mb-8">Phishing Detection</h1>
       <PhishingPredictor />
     </main>
-  )
+  );
 }
-
