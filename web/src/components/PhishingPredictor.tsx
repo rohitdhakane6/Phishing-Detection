@@ -102,18 +102,27 @@ export function PhishingPredictor() {
                 {error}
               </div>
             ) : (
-              <div
+                <div
                 className={`flex items-center justify-center ${
                   !prediction ? "text-green-500" : "text-red-500"
                 }`}
-              >
+                >
                 {!prediction ? (
+                  <>
                   <CheckCircle className="mr-2" />
+                  It is safe to visit 
+                  {/* (Confidence: {(confidence ?? 0).toFixed(2)}%
+                  ) */}
+                  </>
                 ) : (
+                  <>
                   <AlertCircle className="mr-2" />
+                  May not be safe to visit 
+                  {/* (Confidence: {(confidence ?? 0).toFixed(2)}%
+                  ) */}
+                  </>
                 )}
-                {/* {prediction} (Confidence: {(confidence ?? 0).toFixed(2)}%) */}
-              </div>
+                </div>
             )}
           </div>
         )}
